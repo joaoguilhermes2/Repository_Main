@@ -1,0 +1,229 @@
+:root{
+    --cor-de-fundo: rgb(7, 3, 33);
+    --cor-fonte-menu: white;
+    --cor-fundo-menu: rgb(10, 8, 17);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: navy;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+.Header{
+    background-color: var(--cor-fundo-menu);
+    color: var(--cor-fonte-menu);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+}
+
+.Header .logo img{
+    height: 6rem;
+}
+
+.Header .nav-bar a{
+    font-size: 2.2rem;
+    margin-left: 1rem;
+    color: var(--cor-fonte-menu);
+    align-items: center;
+    margin: auto 1rem;
+    height: 100%;
+}
+
+.Header .nav-bar a:hover{
+    border-bottom: 0.5rem solid rgb(0, 55, 255, 0.865);
+    padding-bottom: 0.5rem;
+    transition: 0.2s linear;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(IMG/img\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    background-color: rgb(2, 5, 39, 0.59);
+    box-shadow: 10px 40px 20px rgb(2, 5, 39, 0.59);
+    min-height: 100vh;
+    border-radius: 20px;
+}
+
+.home .content h3{
+    color: aliceblue;
+    font-size: 5rem;
+    padding: 120px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home .content p{
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.content .btn{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: var(--cor-fundo-menu);
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.content .btn:hover{
+    letter-spacing: 0.2rem;
+    transition: 0.3s ease-out;
+}
+
+.about .heading{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: red;
+    padding: 2px;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(2, 5, 39, 0.923);
+}
+
+.about .row .img{
+    flex: 1 1 45rem;
+}
+
+.about .row .img img{
+    width: 50%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: aliceblue;
+    padding: 1rem 0.2rem;
+    line-height: 1.8rem;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap; /* Toda vez que preenche a tela ele quebra para a próxima */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.cards .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+}
+
+.cards .box-container .box{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .box-container .box .image{
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards .box-container .box:hover .image img{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.cards .box-container .box .content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .box-container .box .content .title{
+    font-size: 24px;
+    line-height: 1.5;
+    color: white;
+}
+
+.cards .box-container .box .content span{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cards .box-container .box .content .btn{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 14px;
+    background-color: var(--cor-fundo-menu);
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+}
