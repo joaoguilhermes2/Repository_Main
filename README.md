@@ -1,2 +1,2 @@
 # Repository_Main
- Here is all my code used to create my e-commerce website.
+ Location where websites that were developed using HTML5, CSS3, JavaScript and PHP.
